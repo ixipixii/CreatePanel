@@ -1,0 +1,6 @@
+C:\Users\k.sinyagina\source\repos\CreatePanel\CreatePanel\bin\Debug\CreatePanel.dll
+C:\Users\k.sinyagina\source\repos\CreatePanel\CreatePanel\bin\Debug\CreatePanel.pdb
+C:\Users\k.sinyagina\source\repos\CreatePanel\CreatePanel\obj\Debug\CreatePanel.csproj.AssemblyReference.cache
+C:\Users\k.sinyagina\source\repos\CreatePanel\CreatePanel\obj\Debug\CreatePanel.csproj.CoreCompileInputs.cache
+C:\Users\k.sinyagina\source\repos\CreatePanel\CreatePanel\obj\Debug\CreatePanel.dll
+C:\Users\k.sinyagina\source\repos\CreatePanel\CreatePanel\obj\Debug\CreatePanel.pdb

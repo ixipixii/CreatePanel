@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Name>CreatePanel</Name>
+		<Assembly>CreatePanel\CreatePanel.dll</Assembly>
+		<ClientId>F86CCD1F-8A0C-430D-8F36-3929AEFA56BB</ClientId>
+		<FullClassName>CreatePanel.Main</FullClassName>
+		<Text>CreatePanel</Text>
+		<VendorId>ADSK</VendorId>
+	</AddIn>
+</RevitAddIns>
