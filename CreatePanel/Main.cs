@@ -30,7 +30,7 @@ namespace CreatePanel
 
         public Result OnStartup(UIControlledApplication application)
         {
-            string tabName = "Квартирография";
+            string tabName = "Панель";
             application.CreateRibbonTab(tabName);
 
             string absPath = GetExeDirectory();
@@ -39,31 +39,31 @@ namespace CreatePanel
             string path1 = Path.Combine(absPath, relPath1);
             path1 = Path.GetFullPath(path1);
 
-            string pathImg1 = Path.Combine(absPath, @"Resources\pm.png");
+            //string pathImg1 = Path.Combine(absPath, @"Resources\pm.png");
 
             string relPath2 = @"2\";
             string path2 = Path.Combine(absPath, relPath2);
             path2 = Path.GetFullPath(path2);
 
-            string pathImg2 = Path.Combine(absPath, @"Resources\kv.png");
+            //string pathImg2 = Path.Combine(absPath, @"Resources\kv.png");
 
-            var panel = application.CreateRibbonPanel(tabName, "Создание");
+            var panel = application.CreateRibbonPanel(tabName, "Панель");
 
-            var button_1 = new PushButtonData("Помещения", "Переименование\nпомещений",
-                Path.Combine(path1, "Plugin_Kvartiry.dll"),
-                "Plugin_Kvartiry.Main");
+            var button_1 = new PushButtonData("Задание: Создание кнопок", "Создание\nпкнопок",
+                Path.Combine(path1, "Creating_buttons.dll"),
+                "Creating_buttons.Main");
 
-            var button_2 = new PushButtonData("Квартиры", "Создание квартир",
-                Path.Combine(path2, "Plugin_Kvartiry2.dll"),
-                "Plugin_Kvartiry2.Main");
+            var button_2 = new PushButtonData("Задание: Изменение типов стен", "Изменение\nтипов стен",
+                Path.Combine(path2, "ChangingWallTypes.dll"),
+                "ChangingWallTypes.Main");
 
-            Uri uriImage1 = new Uri(pathImg1, UriKind.Absolute);
+/*            Uri uriImage1 = new Uri(pathImg1, UriKind.Absolute);
             BitmapImage largeImage1 = new BitmapImage(uriImage1);
             button_1.LargeImage = largeImage1;
 
             Uri uriImage2 = new Uri(pathImg2, UriKind.Absolute);
             BitmapImage largeImage2 = new BitmapImage(uriImage2);
-            button_2.LargeImage = largeImage2;
+            button_2.LargeImage = largeImage2;*/
 
             panel.AddItem(button_1);
             panel.AddItem(button_2);
