@@ -39,13 +39,9 @@ namespace CreatePanel
             string path1 = Path.Combine(absPath, relPath1);
             path1 = Path.GetFullPath(path1);
 
-            //string pathImg1 = Path.Combine(absPath, @"Resources\pm.png");
-
             string relPath2 = @"2\";
             string path2 = Path.Combine(absPath, relPath2);
             path2 = Path.GetFullPath(path2);
-
-            //string pathImg2 = Path.Combine(absPath, @"Resources\kv.png");
 
             var panel = application.CreateRibbonPanel(tabName, "Панель");
 
@@ -56,14 +52,6 @@ namespace CreatePanel
             var button_2 = new PushButtonData("Задание: Изменение типов стен", "Изменение\nтипов стен",
                 Path.Combine(path2, "ChangingWallTypes.dll"),
                 "ChangingWallTypes.Main");
-
-/*            Uri uriImage1 = new Uri(pathImg1, UriKind.Absolute);
-            BitmapImage largeImage1 = new BitmapImage(uriImage1);
-            button_1.LargeImage = largeImage1;
-
-            Uri uriImage2 = new Uri(pathImg2, UriKind.Absolute);
-            BitmapImage largeImage2 = new BitmapImage(uriImage2);
-            button_2.LargeImage = largeImage2;*/
 
             panel.AddItem(button_1);
             panel.AddItem(button_2);
